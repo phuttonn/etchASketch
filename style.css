@@ -33,6 +33,5 @@ body {
 }
 
 .row {
-    border: 1px solid black;
      flex: auto; /* stretch to fill height */
 }
