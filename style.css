@@ -12,6 +12,12 @@ body {
     align-items: center;
 }
 
+.buttons {
+    display: flex;
+    margin: 1em;
+    gap: 4px;
+}
+
 #container {
     display: flex;
     border: 3px solid red;
