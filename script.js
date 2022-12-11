@@ -7,7 +7,8 @@ function gridSize() {
     button.addEventListener('click', () => {
         gridValue = prompt("Size of grid?", 64);
         createGrid();
-    });
+    },
+    {once:true});
 }
 
 gridSize();
