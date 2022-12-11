@@ -1,15 +1,23 @@
-let columnValue = 65;
-let rowValue = 65;
-
 const grid = document.querySelector('#container');
 const body = document.querySelector('body');
+const button = document.querySelector('button');
+let gridValue;
+
+function gridSize() {
+    button.addEventListener('click', () => {
+        gridValue = prompt("Size of grid?", 64);
+        createGrid();
+    });
+}
+
+gridSize();
 
 function createGrid() {
-    for (let i = 0; i < columnValue; i++) {
+    for (let i = 0; i < gridValue; i++) {
         let columnCell = document.createElement('div'); // creates column of divs based on variable columns
         columnCell.className = 'column';
 
-        for (let j = 0; j < rowValue; j++) {
+        for (let j = 0; j < gridValue; j++) {
             let rowCell = document.createElement('div'); // creates rows based on variable rows
             rowCell.className = 'row';
             columnCell.appendChild(rowCell); // add rows to each column
@@ -29,5 +37,3 @@ function createGrid() {
     }
     sketch();
 }
-
-createGrid();
