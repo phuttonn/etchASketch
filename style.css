@@ -1,3 +1,25 @@
+/* clearing any defaults */ 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 #container {
     display: flex;
+    border: 3px solid red;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(50, 50, 50)
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* to fill the same space as the other columns) */
+}
+
+.row {
+    border: 1px solid black;
+     flex: auto; /* stretch to fill height */
 }
