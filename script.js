@@ -7,7 +7,7 @@ function gridSize() {
     button.addEventListener('click', () => {
         do{
             gridValue = prompt("Size of grid?", 64);
-        } while ( gridValue > 100);
+        } while (gridValue > 100);
         
         createGrid();
     },
