@@ -1,11 +1,14 @@
 const grid = document.querySelector('#container');
 const body = document.querySelector('body');
 const button = document.querySelector('button');
-let gridValue;
+let gridValue = 0;
 
 function gridSize() {
     button.addEventListener('click', () => {
-        gridValue = prompt("Size of grid?", 64);
+        do{
+            gridValue = prompt("Size of grid?", 64);
+        } while ( gridValue > 100);
+        
         createGrid();
     },
     {once:true});
